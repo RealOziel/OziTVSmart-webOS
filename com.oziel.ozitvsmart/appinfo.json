@@ -1,0 +1,9 @@
+{
+  "id": "com.oziel.ozitvsmart",
+  "version": "1.7.0",
+  "vendor": "OziTV",
+  "type": "web",
+  "main": "index.html",
+  "title": "OziTV Smart",
+  "icon": "icon.png"
+}
