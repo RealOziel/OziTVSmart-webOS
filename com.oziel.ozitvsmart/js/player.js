@@ -1,0 +1,1 @@
+const Player={play(c){const v=document.getElementById('player');v.src=`${Xtream.host}/live/${Xtream.user}/${Xtream.pass}/${c.stream_id}.m3u8`;v.hidden=false;v.play();}};
