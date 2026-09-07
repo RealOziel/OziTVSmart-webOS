@@ -1,0 +1,2 @@
+const FullscreenPlayer={open(){const v=document.getElementById('player');if(!v)return;v.hidden=false;v.className='fullscreen-player';v.play();},close(){const v=document.getElementById('player');if(v){v.pause();v.hidden=true;}}};
+window.FullscreenPlayer=FullscreenPlayer;
