@@ -1,0 +1,1 @@
+const App={async loadChannels(){const list=await Xtream.channels();const box=document.getElementById('channels');box.innerHTML='';list.forEach(c=>{const b=document.createElement('button');b.innerHTML=(c.name||'Canal');b.onclick=()=>Player.play(c);box.appendChild(b);});}};
