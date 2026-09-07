@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install webOS CLI
+      - name: Install Node and webOS CLI
         run: |
-          npm install -g @webosose/ares-cli || npm install -g @enact/cli
+          npm install -g @webosose/ares-cli
+          ares --version
       - name: Package IPK
         run: |
+          mkdir -p build
           ares-package com.oziel.ozitvsmart -o build
       - name: Upload IPK
         uses: actions/upload-artifact@v4
